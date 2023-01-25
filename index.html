@@ -50,10 +50,9 @@ body {font-family: Arial;}
 <p>Click on the menu item to view the analysis:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'CLL Daily Sales')">CLL Daily Sales</button>
-  <button class="tablinks" onclick="openCity(event, 'Freight Allocation')">Freight Allocation</button>
-  <button class="tablinks" onclick="openCity(event, 'BSDM')">BSDM</button>
-  <button class="tablinks" onclick="openCity(event, 'Bill of Distribtion')">Bill of Distribution</button>
+  <button class="tablinks" onclick="(event, 'CLL Daily Sales')">CLL Daily Sales</button>
+  <button class="tablinks" onclick="(event, 'Freight Allocation')">Freight Allocation</button>
+  <button class="tablinks" onclick="(event, 'Bill of Distribtion')">Bill of Distribution</button>
 </div>
 
 <div id="CLL Daily Sales" class="tabcontent">
@@ -72,14 +71,6 @@ body {font-family: Arial;}
   </p> 
 </div>
 
-<div id="BSDM" class="tabcontent">
-  <h3>In-Scope Freight</h3>
-  <p>
-  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-  <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/12MonthShippingData/ModeandFreightTerms' width='1700' height='900' toolbar='bottom' ></tableau-viz>
-  </p>
-</div>
-
   <div id="Bill of Distribtion" class="tabcontent">
   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
@@ -87,21 +78,21 @@ body {font-family: Arial;}
   </p>
   </div>
                                    
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+//<script>
+//function openCity(evt, cityName) {
+//  var i, tabcontent, tablinks;
+//  tabcontent = document.getElementsByClassName("tabcontent");
+//  for (i = 0; i < tabcontent.length; i++) {
+//    tabcontent[i].style.display = "none";
+//  }
+//  tablinks = document.getElementsByClassName("tablinks");
+//  for (i = 0; i < tablinks.length; i++) {
+//    tablinks[i].className = tablinks[i].className.replace(" active", "");
+//  }
+//  document.getElementById(cityName).style.display = "block";
+ // evt.currentTarget.className += " active";
+//}
+//</script>
    
 </body>
 </html> 
