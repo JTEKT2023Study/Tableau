@@ -50,9 +50,9 @@ body {font-family: Arial;}
 <p>Click on the menu item to view the analysis:</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="(event, 'CLL Daily Sales')">CLL Daily Sales</button>
-  <button class="tablinks" onclick="(event, 'Freight Allocation')">Freight Allocation</button>
-  <button class="tablinks" onclick="(event, 'Bill of Distribtion')">Bill of Distribution</button>
+  <button class="tablinks" onclick="open(event, 'CLL Daily Sales')">CLL Daily Sales</button>
+  <button class="tablinks" onclick="open(event, 'Freight Allocation')">Freight Allocation</button>
+  <button class="tablinks" onclick="open(event, 'Bill of Distribtion')">Bill of Distribution</button>
 </div>
 
 <div id="CLL Daily Sales" class="tabcontent">
@@ -79,7 +79,7 @@ body {font-family: Arial;}
   </div>
                                    
 <script>
-function openCity(evt, cityName) {
+function open(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
