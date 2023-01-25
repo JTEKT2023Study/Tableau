@@ -53,6 +53,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openCity(event, 'CLL Daily Sales')">CLL Daily Sales</button>
   <button class="tablinks" onclick="openCity(event, 'Freight Allocation')">Freight Allocation</button>
   <button class="tablinks" onclick="openCity(event, 'BSDM')">BSDM</button>
+  <button class="tablinks" onclick="openCity(event, 'Bill of Distribtion')>Bill of Distribution</button>
 </div>
 
 <div id="CLL Daily Sales" class="tabcontent">
@@ -78,6 +79,14 @@ body {font-family: Arial;}
   </p>
 </div>
 
+  <div id="BSDM" class="tabcontent">
+  <h3>In-Scope Freight</h3>
+  <p>
+  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+  <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/BODArcSankey/ArcSankey' width='1500' height='970' hide-tabs toolbar='bottom' ></tableau-viz>
+  </p>
+  </div>
+                                   
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
