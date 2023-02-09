@@ -49,7 +49,7 @@ body {font-family: Arial;}
 <h2>JTEKT Network Re-design - Baseline Data Validation</h2>
 
 <div class="tab">
-  <button class="tablinks" onclick="openTableau(event, 'CLL Daily Sales')">CLL Daily Sales</button>
+  <button class="tablinks" onclick="openTableau(event, 'Baseline Sales')">Baseline Sales</button>
   <button class="tablinks" onclick="openTableau(event, 'Freight Allocation')">Freight Allocation</button>
   <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Node Flow')">Bill of Distribution Node Flow</button>
   <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Sankey')">Bill of Distribution Sankey</button> 
@@ -64,6 +64,7 @@ body {font-family: Arial;}
   </tableau-viz>
  </p>
   </div> 
+  
 <div id="Freight Allocation" class="tabcontent">
   <h3>In-Scope Freight</h3>
   <p>
@@ -75,48 +76,26 @@ body {font-family: Arial;}
   
 <div id="Bill of Distribution Node Flow" class="tabcontent">
   <h3>In-Scope Freight</h3>
-  <p>
-  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-  <tableau-viz id='tableau-viz' src='<div id="Freight Allocation" class="tabcontent">
-  <h3>In-Scope Freight</h3>
-  <p>
+   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
   <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/BODArcSankey/ArcSankey' width='1700' height='800' toolbar='bottom' >
     </tableau-viz>
   </p> 
-</div>' width='1700' height='800' toolbar='bottom' >
-    </tableau-viz>
-  </p> 
-</div>
+</div> 
 <div id="Bill of Distribution Sankey" class="tabcontent">
-  <h3>In-Scope Freight</h3>
-  <p>
-  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-  <tableau-viz id='tableau-viz' src='<div id="Freight Allocation" class="tabcontent">
   <h3>In-Scope Freight</h3>
   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
   <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/JTEKTBODSankey/Sankey' width='1700' height='800' toolbar='bottom' >
     </tableau-viz>
   </p> 
-</div>' width='1700' height='800' toolbar='bottom' >
-    </tableau-viz>
-  </p> 
 </div>
 <div id="Baseline Model Results" class="tabcontent">
   <h3>In-Scope Freight</h3>
-  <p>
-  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
-  <tableau-viz id='tableau-viz' src='<div id="Freight Allocation" class="tabcontent">
-  <h3>In-Scope Freight</h3>
-  <p>
-  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
   <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/ModelOutput/BySource' width='1700' height='800' toolbar='bottom' >
     </tableau-viz>
-  </p> 
-</div>' width='1700' height='800' toolbar='bottom' >
-    </tableau-viz>
-  </p> 
+    </p> 
 </div>
 <script>
 function openTableau(evt, cityName) {
