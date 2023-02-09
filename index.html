@@ -51,7 +51,8 @@ body {font-family: Arial;}
 <div class="tab">
   <button class="tablinks" onclick="openTableau(event, 'CLL Daily Sales')">CLL Daily Sales</button>
   <button class="tablinks" onclick="openTableau(event, 'Freight Allocation')">Freight Allocation</button>
-  <button class="tablinks" onclick="openTableau(event, 'Freight Allocation')">Bill of Distribution</button>
+  <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Node Flow')">Bill of Distribution Node Flow</button>
+  <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Sankey')">Bill of Distribution Sankey</button> 
 </div>
 
 <div id="CLL Daily Sales" class="tabcontent">
@@ -71,7 +72,7 @@ body {font-family: Arial;}
   </p> 
 </div>  
   
-<div id="Bill of Distribution" class="tabcontent">
+<div id="Bill of Distribution Node Flow" class="tabcontent">
   <h3>In-Scope Freight</h3>
   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
@@ -80,6 +81,21 @@ body {font-family: Arial;}
   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
   <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/BODArcSankey/ArcSankey' width='1700' height='800' toolbar='bottom' >
+    </tableau-viz>
+  </p> 
+</div>' width='1700' height='800' toolbar='bottom' >
+    </tableau-viz>
+  </p> 
+</div>
+<div id="Bill of Distribution Sankey" class="tabcontent">
+  <h3>In-Scope Freight</h3>
+  <p>
+  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+  <tableau-viz id='tableau-viz' src='<div id="Freight Allocation" class="tabcontent">
+  <h3>In-Scope Freight</h3>
+  <p>
+  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+  <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/JTEKTBODSankey/Sankey' width='1700' height='800' toolbar='bottom' >
     </tableau-viz>
   </p> 
 </div>' width='1700' height='800' toolbar='bottom' >
