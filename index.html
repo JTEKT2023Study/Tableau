@@ -53,6 +53,7 @@ body {font-family: Arial;}
   <button class="tablinks" onclick="openTableau(event, 'Freight Allocation')">Freight Allocation</button>
   <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Node Flow')">Bill of Distribution Node Flow</button>
   <button class="tablinks" onclick="openTableau(event, 'Bill of Distribution Sankey')">Bill of Distribution Sankey</button> 
+  <button class="tablinks" onclick="openTableau(event, 'Baseline Model Results')">Baseline Model Results</button>  
 </div>
 
 <div id="CLL Daily Sales" class="tabcontent">
@@ -96,6 +97,21 @@ body {font-family: Arial;}
   <p>
   <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
   <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/JTEKTBODSankey/Sankey' width='1700' height='800' toolbar='bottom' >
+    </tableau-viz>
+  </p> 
+</div>' width='1700' height='800' toolbar='bottom' >
+    </tableau-viz>
+  </p> 
+</div>
+<div id="Baseline Model Results" class="tabcontent">
+  <h3>In-Scope Freight</h3>
+  <p>
+  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+  <tableau-viz id='tableau-viz' src='<div id="Freight Allocation" class="tabcontent">
+  <h3>In-Scope Freight</h3>
+  <p>
+  <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+  <tableau-viz id='tableau-viz' src='https://prod-useast-a.online.tableau.com/t/simulationdynamicsinc/views/ModelOutput/BySource' width='1700' height='800' toolbar='bottom' >
     </tableau-viz>
   </p> 
 </div>' width='1700' height='800' toolbar='bottom' >
